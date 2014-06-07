@@ -1,8 +1,8 @@
 build: components index.js
-	@component build --dev
+	@./node_modules/.bin/component build
 
 components: component.json
-	@component install --dev
+	@./node_modules/.bin/component install
 
 clean:
 	rm -fr build components template.js
