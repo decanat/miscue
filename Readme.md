@@ -1,5 +1,5 @@
 
-# Miscue
+# Miscue [![Build Status](https://travis-ci.org/decanat/miscue.svg?branch=master)](https://travis-ci.org/decanat/miscue)
 
 Miscue class for Decanat, to provide better interface to HTTP errors and status in general.
 
@@ -52,6 +52,13 @@ Miscue class for Decanat, to provide better interface to HTTP errors and status 
 
     status.set(2500);
     status.isEnough(); // true
+
+
+## Testing
+
+To test with PhantomJS, run:
+
+    $ make test    
 
 
 ## License
