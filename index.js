@@ -187,8 +187,10 @@ Miscue.prototype.turnError = function(){
         }
     } while (proto = proto.__proto__);
 
-    // hide current function from stack
-    Error.captureStackTrace(this, this.turnError);
+    // hide current function from stack, if possible
+    if (isType(Error.captureStackTrace, 'function')) {
+        Error.captureStackTrace(this, this.turnError);
+    }
     // make it Error
     this.__proto__ = new Error;
 
