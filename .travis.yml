@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - 0.10
+
+before_script:
+  - export PATH=$PATH:`npm bin`
+  - component install
+  - component build
+script:
+  - make test
