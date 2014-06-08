@@ -110,8 +110,18 @@ function Miscue(code, data) {
 
     this.set(code);
 
+    this.initialize.apply(this, arguments);
+
     return this;
 }
+
+/**
+ * Boilerplate function initially,
+ * is being called on instantiation,
+ * so makes comfortable applying enhancements.
+ */
+
+Miscue.prototype.initialize = function(){};
 
 
 /**
@@ -258,10 +268,9 @@ module.exports.extend = extend;
  */
 
 function isType(o, expected) {
-    var toString = Object.prototype.toString,
-        actual;
+    var actual;
 
-    actual = toString
+    actual = {}.toString
         .call(o)
         .replace(/^\[object (\w+)\]$/i, '$1')
         .toLowerCase();
@@ -278,4 +287,3 @@ function isType(o, expected) {
         : actual;
 }
 
-// function isNumber()
