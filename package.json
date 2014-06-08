@@ -5,7 +5,8 @@
   "keywords": [
     "error",
     "status",
-    "miscue"
+    "miscue",
+    "decanat"
   ],
   "main": "index.js",
   "scripts": {
