@@ -5,7 +5,8 @@
   "keywords": [
     "error",
     "status",
-    "miscue"
+    "miscue",
+    "decanat"
   ],
   "main": "index.js",
   "scripts": {
@@ -26,6 +27,8 @@
   },
   "devDependencies": {
     "phantomjs": "^1.9.7-8",
-    "mocha-phantomjs": "^3.4.1"
+    "mocha-phantomjs": "^3.4.1",
+    "express": "^4.4.1",
+    "component": "^0.19.9"
   }
 }
