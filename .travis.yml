@@ -4,8 +4,7 @@ node_js:
   - "0.10"
 
 before_script:
-  - npm install component -g
-  - component install
+  - npm install -g component
   - component build
 
 script:
