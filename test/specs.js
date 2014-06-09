@@ -9,29 +9,6 @@ describe('Itself', function () {
         expect(Miscue.length)
             .to.equal(2);
     });
-
-    it('should be "extendable"', function(){
-        expect(Miscue).itself
-            .to.have.property('extend')
-            .to.be.a('function');
-    });
-
-    it('should keep functionity while being extended', function(){
-        var HalfST = Miscue.extend({
-                echo: function(){
-                    return this.code / 2;
-                }
-            });
-
-        var half = new HalfST(800);
-
-        expect(half.echo())
-            .to.equal(400);
-
-        half.set(500);
-        expect(half.echo())
-            .to.equal(250);
-    });
 });
 
 

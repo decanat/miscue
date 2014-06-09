@@ -3,10 +3,13 @@
   "repo": "decanat/miscue",
   "description": "Miscue class for Decanat, to provide better interface to HTTP errors and status in general",
   "version": "0.0.3",
-  "keywords": ["error", "status", "miscue"],
-  "dependencies": {
-    "decanat/extend": "*"
-  },
+  "keywords": [
+    "error",
+    "status",
+    "miscue",
+    "decanat"
+  ],
+  "dependencies": {},
   "development": {},
   "license": "MIT",
   "main": "index.js",
