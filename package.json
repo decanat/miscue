@@ -1,6 +1,6 @@
 {
   "name": "decanat-miscue",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Miscue class for Decanat, to provide better interface to HTTP errors and status in general",
   "keywords": [
     "error",
@@ -8,7 +8,7 @@
     "miscue",
     "decanat"
   ],
-  "main": "index.js",
+  "main": "lib/miscue.js",
   "scripts": {
     "test": "make test"
   },
@@ -22,9 +22,7 @@
     "url": "https://github.com/decanat/miscue/issues"
   },
   "homepage": "https://github.com/decanat/miscue",
-  "dependencies": {
-    "decanat-extend": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "phantomjs": "^1.9.7-8",
     "mocha-phantomjs": "^3.4.1",

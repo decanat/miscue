@@ -43,24 +43,6 @@ status.turnError();
 // status instanceof Error === true
 ```
 
-#### Extend ####
-
-```js
-var MiningST = Miscue.extend({
-        isEnough: function(){
-            return this.code >= 2500;
-        }
-    });
-
-var status = new MiningST();
-
-status.set(2400);
-status.isEnough(); // false
-
-status.set(2500);
-status.isEnough(); // true
-```
-
 ## Testing
 
 To test with PhantomJS, run:
