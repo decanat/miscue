@@ -9,12 +9,13 @@
     "miscue",
     "decanat"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "component/type": "^1.0.0"
+  },
   "development": {},
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/miscue.js",
   "scripts": [
-    "index.js",
     "lib/miscue.js"
   ]
 }
