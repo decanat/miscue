@@ -1,4 +1,6 @@
-var Miscue = require('miscue');
+var expect = require('chai').expect;
+
+var Miscue = require('../index.js');
 
 describe('Itself', function () {
     it('should be proper type', function () {
