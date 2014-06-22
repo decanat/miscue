@@ -1,14 +1,18 @@
-build: components index.js
+build:
 	@./node_modules/.bin/component build
 
-components: component.json
-	@./node_modules/.bin/component install
+test: build-dev
+	@./node_modules/.bin/mocha-phantomjs ./test/index.html
+
+build-dev:
+	@./node_modules/.bin/component build \
+		--dev \
+		--out ./test/ \
+		--name main
+
 
 clean:
-	rm -fr build components
-
-test:
-	@./node_modules/.bin/mocha-phantomjs ./test/index.html
+	rm -fr build components node_modules
 
 serve: ./test/server.js
 	node $^
