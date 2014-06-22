@@ -2,4 +2,4 @@
  * Expose
  */
 
-module.exports = require('./lib/miscue');
+module.exports = require('./lib/miscue.js');
