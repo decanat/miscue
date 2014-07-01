@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/decanat/miscue",
   "dependencies": {
-    "component-type": "^1.0.0",
-    "yiwn-merge": "0.0.1"
+    "yiwn-extend": "^1.0.1"
   },
   "devDependencies": {
     "component": "^1.0.0-rc5",

@@ -34,13 +34,13 @@ describe('Initialize', function () {
     });
 
     it('should convert to string', function(){
-        expect(m001 + '').to.equal('miscue (1)');
+        expect(m001 + '').to.equal('• miscue (1)');
 
-        expect(m201 + '').to.equal('success (201): {"id":1000}');
-        expect(m301 + '').to.equal('redirection (301): http://google.com');
+        expect(m201 + '').to.equal('✔ success (201)');
+        expect(m301 + '').to.equal('➤ redirection (301)');
 
-        expect(m401 + '').to.equal('client error (401)');
-        expect(m500 + '').to.equal('server error (500): DB Error');
+        expect(m401 + '').to.equal('✖ client error (401)');
+        expect(m500 + '').to.equal('✖ server error (500)');
     });
 
     it('should be an Error in case of 4xx, 5xx, ..', function(){
