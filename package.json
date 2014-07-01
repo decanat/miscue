@@ -1,6 +1,6 @@
 {
   "name": "decanat-miscue",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Miscue class for Decanat, to provide better interface to HTTP errors and status in general",
   "keywords": [
     "error",
